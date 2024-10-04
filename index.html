@@ -5,29 +5,58 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS Popularity Based on Spotify Listeners Choropleth Map</title>
+    <title>BTS The Global Wave Dashboard</title>
 
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
   
-  <!-- CSS -->
+  <!--Import Google Style words-->
+
+  <!-- Import CSS -->
   <link rel="stylesheet" type="text/css" href="css\style.css" media="all">
 
 </head>
 
 <body>
 
+  <!--Include body of dashboard-->
+
 <!--Include Vega-Lite code to show map on the webpage-->
-<div id="choropleth_map"></div>
+<div id ="choropleth_map"></div>
+<div id = "multiple_line_chart"></div>
+<div id = "multiple_line_chart1"></div>
+<div id = "donut_chart_gender"></div>
 
 <script type="text/javascript">
 
-  var spec = "js/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map', spec).then(function(result) {
+  // choropleth map (BTS popularity based on Instagram followers)
+  var specVis1 = "js/bts_popularity_choropleth_map.vg.json";
+  // multiple line chart (search interest trends over years - kpop and worlwide artists)
+  var specVis2 = "js/search_bts_kpop_multiple_line.vg.json";
+  var specVis3 = "js/search_bts_worldwide_multiple_line.vg.json";
+  // donut chart (Demographics of ARMY - BTS fans)
+  var specVis4 = "js/gender_donut_chart_survey.vg.json";
+  var specVis5 = "js/gender_donut_chart_platform.vg.json";
+
+  // embed the viz 
+  // vegaEmbed('#choropleth_map', specVis1, { "actions": false }).then(function(result) {
+  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  // }).catch(console.error);
+
+  // vegaEmbed("#multiple_line_chart1", specVis2, { "actions": false }).then(function(result) {
+  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  // }).catch(console.error);
+  
+  // vegaEmbed("#multiple_line_chart1", specVis3, { "actions": false }).then(function(result) {
+  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  // }).catch(console.error);
+
+  vegaEmbed("#multiple_line_chart1", specVis5, { "actions": false }).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+
 </script>
 
 </body>
