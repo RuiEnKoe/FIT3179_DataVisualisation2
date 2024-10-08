@@ -56,7 +56,7 @@
 
     <!-- image container -->
     <div class = img_container> 
-      <img src = 'css/bts.jpg' alt="BTS image" style = 'height: 100%;width: auto'>
+      <img src = 'css/bts.jpg' alt="BTS image" style = 'height: 100%'>
     </div>
 
   <!-- end of paragraph container -->
@@ -77,6 +77,22 @@
 
   <div class = 'chropleth_map_container'>
     <div id = "choropleth_map_popularity" class = "vis-container"></div>
+  </div>
+
+  <div class="pure-g">
+    <div id="title" class="pure-u-1">
+        <h1>The TrendSetters</h1>
+    </div>
+  </div>
+
+  <div class="pure-g">
+    <div id="maptitle" class="pure-u-1">
+      <h1>Popularity of BTS Based on Instagram Followers (August 2024)</h1>
+    </div>
+  </div>
+
+  <div class = 'multiple_line_container'>
+
   </div>
 
 
@@ -129,25 +145,25 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     
-    vegaEmbed("#multiple_line_chart1_trend", specVis3, { "actions": false }).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
+    // vegaEmbed("#multiple_line_chart1_trend", specVis3, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
 
-    vegaEmbed("#donut_chart_gender", specVis4, { "actions": false }).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
+    // vegaEmbed("#donut_chart_gender", specVis4, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
 
-    vegaEmbed("#bar_age", specVis5, { "actions": false }).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
+    // vegaEmbed("#bar_age", specVis5, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
 
-    vegaEmbed("#stacked_bar_fanbase", specVis6, { "actions": false }).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
+    // vegaEmbed("#stacked_bar_fanbase", specVis6, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
 
-    vegaEmbed("#bubble_chart_revenue", specVis7, { "actions": false }).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
+    // vegaEmbed("#bubble_chart_revenue", specVis7, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
 
 
 

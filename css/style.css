@@ -30,7 +30,7 @@ body {
     margin-top: 30px;
     background-color: aqua;
     padding: 10px;
-    height: auto;
+    /* height: auto; */
     flex-direction: row;
     width: 3000px;
 }
@@ -65,7 +65,7 @@ body {
     justify-content: space-between;
     /* align-items: stretch; */
     margin-top: 30px;
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
     padding: 10px;
     height: auto;
     width: 3000px;
@@ -80,8 +80,38 @@ body {
 #maptitle{
 	text-align: center;
     text-size-adjust: 35px;
+    font-size: 20px;
     /* font-family: "Helvetica"; */
 }
+
+#body_text{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.multiple_line_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 30px;
+    background-color: aqua;
+    padding: 10px;
+    height: auto;
+    flex-direction: row;
+    width: 3000px;
+}
+
+.line_graph_container {
+    flex: 1 1 50%; /* Takes up 50% of the available space */
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: yellow;
+    align-items: flex-start;
+}
+
+
 
 #choropleth_map_popularity{
     top: 20px;
@@ -92,6 +122,7 @@ body {
     margin-bottom: 20px;
     /* height: 1000px; */
 }
+
 
 #bubble_plot{
     width: 80%;
