@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS The Global Wave Dashboard</title>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS The Global Wave Dashboard</title>
 
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
@@ -13,49 +14,144 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
   
   <!--Import Google Style words-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 
   <!-- Import CSS -->
   <link rel="stylesheet" type="text/css" href="css\style.css" media="all">
 
+  <!--Import pure css-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"crossorigin="anonymous">
+
+
 </head>
 
+<!--include body of dashboard-->
 <body>
 
-  <!--Include body of dashboard-->
+  <!-- page size-->
+  <div class = dashboard_page>
 
-<!--Include Vega-Lite code to show map on the webpage-->
-<div id ="choropleth_map"></div>
-<div id = "multiple_line_chart"></div>
-<div id = "multiple_line_chart1"></div>
-<div id = "donut_chart_gender"></div>
+  <!--insert image-->
+  <img src = 'css/Beyond_The_Scene.jpg' alt="background image"
+  style = 'width: 3010px; display: block'>
 
-<script type="text/javascript">
+  <!-- inesert short intro about BTS -->
+  <div class = para_container>
+    
+    <!-- intro container -->
+    <div class = intro_container>
+      <!-- adjust paragraph -->
+      <p class = "intro_paragraph">
+        BTS, known as Bangtan Sonyeondan or "Beyond The Scene", is a Grammy-nominated South Korean boy band that has been capturing the hearts of millions of fans globally since its debut <br/>in Jun 2013. The group consists of seven members: <br/><b>RM, Jin, Suga, J-hope, Jimin, V and Jung Kook</b>. 
+        <br><br>
+        Gaining recognition for their authentic and self-produced music, top-notch performances, and the way they interact with their fans, BTS <br/>has established themselves as <b>“21st century Pop Icons” </b> breaking countless world records. While imparting a positive influence through activities such as LOVE MYSELF campaign and UN 'Speak Yourself' speech, the band has mobilized millions of fans across the <br/> world, collected <b>four No. 1 songs</b> in a span of 9 months, performed multiple sold-out stadium shows across the world, and been named <b>TIME's Entertainer of the Year 2020</b>. BTS has been nominated for <b>Best Pop Duo/Group Performance</b> for the 63rd Grammy Awards and recognized with numerous prestigious awards like the Billboard Music Awards, American Music Awards and MTV Video Music Awards.
+        <br><br>
+        BTS has a dedicated fan base entitled <b>'ARMY'</b>, <br/>which stands for <b>Adorable Representative M.C. for Youth</b>. ARMY is known for its passionate support of BTS and its commitment<br/> to spreading love and positivity around the world. 
+      </p>
+    </div>
 
-  // choropleth map (BTS popularity based on Instagram followers)
-  var specVis1 = "js/bts_popularity_choropleth_map.vg.json";
-  // multiple line chart (search interest trends over years - kpop and worlwide artists)
-  var specVis2 = "js/search_bts_kpop_multiple_line.vg.json";
-  var specVis3 = "js/search_bts_worldwide_multiple_line.vg.json";
-  // donut chart (Demographics of ARMY - BTS fans)
-  var specVis4 = "js/gender_donut_chart_survey.vg.json";
-  var specVis5 = "js/gender_donut_chart_platform.vg.json";
+    <!-- image container -->
+    <div class = img_container> 
+      <img src = 'css/bts.jpg' alt="BTS image" style = 'height: 100%;width: auto'>
+    </div>
 
-  // embed the viz 
-  // vegaEmbed('#choropleth_map', specVis1, { "actions": false }).then(function(result) {
-  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  // }).catch(console.error);
+  <!-- end of paragraph container -->
+  </div>
+   
+  <!-- pure grid group -->
+  <div class="pure-g">
+    <div id="title" class="pure-u-1">
+        <h1>Echoes Around the Globe</h1>
+    </div>
+  </div>
 
-  // vegaEmbed("#multiple_line_chart1", specVis2, { "actions": false }).then(function(result) {
-  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  // }).catch(console.error);
+  <div class="pure-g">
+    <div id="maptitle" class="pure-u-1">
+      <h1>Popularity of BTS Based on Instagram Followers (August 2024)</h1>
+    </div>
+  </div>
+
+  <div class = 'chropleth_map_container'>
+    <div id = "choropleth_map_popularity" class = "vis-container"></div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--include Vega-Lite code to show map on the webpage-->
+  <!-- <div id = "choropleth_map_popularity"></div> -->
+  <!-- <div id = "multiple_line_chart_trend"></div> -->
+  <div id = "multiple_line_chart1_trend"></div>
+  <div id = "donut_chart_gender"></div>
+  <div id = "bar_age"></div>
+  <div id = "stacked_bar_fanbase"></div>
+  <div id = "bubble_chart_revenue"></div>
+
+  </div>
+  <!-- end dashboard page -->
+
+
+  <!--include script to embed the vega-lite visualization-->
+  <script type="text/javascript">
+
+    // choropleth map (BTS popularity based on Instagram followers)
+    var specVis1 = "js/bts_popularity_choropleth_map.vg.json";
+    // multiple line chart (search interest trends over years - kpop and worlwide artists)
+    var specVis2 = "js/search_bts_kpop_multiple_line.vg.json";
+    var specVis3 = "js/search_bts_worldwide_multiple_line.vg.json";
+    // pie/donut chart (Demographics of ARMY - BTS fans)
+    // gender
+    var specVis4 = "js/gender_pie_chart_survey.vg.json";
+    // var specVis4 = "js/gender_pie_chart_platform_label.vg.json";
+    // age
+    var specVis5 = "js/age_bar_survey.vg.json";
+    // stacked bar chart (fan base evolution over years across various platforms)
+    var specVis6 = "js/fan_base_evo_stacked.vg.json";
+    // bubble chart (revenue of LY concert tour in 2019-2020)
+    var specVis7 = "js/bubble_concert.vg.json";
+    // dot strip plot (BTS Music Style)
+
   
-  // vegaEmbed("#multiple_line_chart1", specVis3, { "actions": false }).then(function(result) {
-  //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  // }).catch(console.error);
+    // embed the viz 
+    vegaEmbed('#choropleth_map_popularity', specVis1, { "actions": false }).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
-  vegaEmbed("#multiple_line_chart1", specVis5, { "actions": false }).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+    vegaEmbed("#multiple_line_chart_trend", specVis2, { "actions": false }).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    // vegaEmbed("#multiple_line_chart1_trend", specVis3, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
+
+    // vegaEmbed("#donut_chart_gender", specVis4, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
+
+    // vegaEmbed("#bar_age", specVis5, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
+
+    // vegaEmbed("#stacked_bar_fanbase", specVis6, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
+
+    // vegaEmbed("#bubble_chart_revenue", specVis7, { "actions": false }).then(function(result) {
+    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    // }).catch(console.error);
+
+
+
+
 
 </script>
 
