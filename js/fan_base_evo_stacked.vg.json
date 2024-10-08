@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Fan Base Evolution Across Various Platforms from 2020-2024",
+    "height": 300,
+    "width": 300,
+    
+    "data": {"url": "data/bts_army_fanbase_evo_long.csv"},
+
+    "mark": {
+        "type": "bar",
+        "tooltip": true
+    },
+
+    "encoding":{
+        "x":{
+            "field": "Date",
+            "type": "ordinal",
+            "title": "Years",
+            "timeUnit": "year",
+            "axis":{
+                "labelAngle": 0,
+                "grid": false
+            }
+        },
+
+        "y":{
+            "aggregate": "sum",
+            "field" : "number_of_fans",
+            "type": "quantitative",
+            "title": "Number of Fans",
+            "axis": {
+                "grid": false
+            }
+        },
+
+        "color":{
+            "field": "platforms",
+            "type": "nominal",
+            "scale" : {
+                "domain" : ["Facebook", "Instagram", "SoundCloud", "Spotify", "Twitter", "YouTube"],
+                "range": ["#e7ba52", "#9467bd", "#f03b20", "#74c476", "#1f77b4", "#f768a1"]
+            },
+            "title": "Platforms"
+        }
+    }
+
+
+
+
+
+
+}

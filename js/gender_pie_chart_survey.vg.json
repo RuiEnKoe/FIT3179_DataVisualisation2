@@ -1,12 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Army Gender Distribution Based on Survey Respondents",
+    "title": "Army Gender Distribution Based on Survey Respondents in 2022",
     "width": 350,
     "height": 400,
     
-    "data" :{"url": "/data/followers_by_gender_survey.csv"},
+    "data" :{"url": "/data/followers_by_gender_survey_2022.csv"},
 
     "encoding": {
+
         "theta":
         {
             "field": "num_followers_gender", 
@@ -19,7 +20,7 @@
             "type": "nominal",
             "title": "Gender",
             "scale": {
-                "range": ["#FFC0CB", "#6495ED", "#7a0177"]
+                "range": ["#FFC0CB", "#6495ED", "#7a0177", "#fdd49e"]
             }
         },
 
@@ -46,13 +47,13 @@
     },
 
     "layer":[
+
         {
             "mark": 
             {
                 "type": "arc",
-                "innerRadius": 100,
-                "tooltip": true,
-                "padAngle": 0.01
+                "outerRadius": 130,
+                "tooltip": true
             }
         },
 
@@ -61,10 +62,10 @@
             {
                 "type": "text",
                 "fontWeight": "bold",
-                "radius": {"expr": "width/2-95"},
-                "align": "center",
+                "radius": 150,
+                "align": "right",
                 "baseline": "top",
-                "dx": 4,
+                "dx": -3,
                 "dy": 3
             },
 
@@ -79,29 +80,26 @@
             }
         },
 
-        {
-            "layer":[{
-                "mark": 
-                {
-                    "type": "text",
-                    "fontWeight": "bold",
-                    "radius": {"expr": "width/2-110"},
-                    "align": "center",
-                    "baseline": "top",
-                    "dx": 3,
-                    "dy": 2
-                },
+        {  
+            "mark": 
+            {
+                "type": "text",
+                "fontWeight": "bold",
+                "radius": 160,
+                "align": "right",
+                "baseline": "top",
+                "dx": -10,
+                "dy": 4
+            },
 
-                "encoding":
+            "encoding":
+            {
+                "text":
                 {
-                    "text":
-                    {
-                        "field": "percentage_gender",
-                        "type": "quantitative"
-                    }
-                }    
-            }
-            ]
+                    "field": "percentage_gender",
+                    "type": "quantitative"
+                }
+            }    
         }
     ]
         

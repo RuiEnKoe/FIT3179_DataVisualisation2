@@ -38,6 +38,7 @@
                     "feature": "topo_oceans"
                 }
             },
+            
             "mark": {
                 "type": "geoshape", 
                 "fill": "skyblue"
@@ -88,7 +89,7 @@
                 "title": "IG followers per 10,000 population",
                 "scale": {
                     "type": "threshold",
-                    "domain":[25, 50, 75, 100],
+                    "domain":[100, 200, 300, 400],
                     "range": ["#f2f0f7", "#cbc9e2","#9e9ac8","#756bb1", "#6a51a3"]
                     }
                 },
