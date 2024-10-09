@@ -122,7 +122,7 @@ body {
     justify-content: center;
     /* align-items: stretch; */
     margin-bottom: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 10px;
     height: auto;
     flex-direction: row;
@@ -151,7 +151,7 @@ body {
     justify-content: center;
     /* align-items: stretch; */
     margin-bottom: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 10px;
     height: auto;
     flex-direction: row;
@@ -167,6 +167,14 @@ body {
 .content_right{
     padding-left: 20px;
     padding-top: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #c8abfd;
+    margin-top: 20px;
+    /* width: 1500px; */
 }
 
 
