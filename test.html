@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS The Global Wave Dashboard</title>
+
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  
+  <!--Import Google Style words-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" type="text/css" href="css\style.css" media="all">
+
+  <!--Import pure css-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"crossorigin="anonymous">
+
+
+</head>
+
+
+<body>
+      
+    <div id = "choropleth_map_popularity"></div>
+
+      <script type="text/javascript">
+
+        // choropleth map (BTS popularity based on Instagram followers)
+        var specVis1 = "js/bts_popularity_choropleth_map.vg.json";
+        // multiple line chart (search interest trends over years - kpop and worlwide artists)
+        var specVis2 = "js/search_bts_kpop_multiple_line.vg.json";
+        var specVis3 = "js/search_bts_worldwide_multiple_line.vg.json";
+        // pie/donut chart (Demographics of ARMY - BTS fans)
+        // gender
+        var specVis4 = "js/gender_pie_chart_survey.vg.json";
+        // var specVis4 = "js/gender_pie_chart_platform_label.vg.json";
+        // age
+        var specVis5 = "js/age_bar_survey.vg.json";
+        // stacked bar chart (fan base evolution over years across various platforms)
+        var specVis6 = "js/fan_base_evo_stacked.vg.json";
+        // bubble chart (revenue of LY concert tour in 2019-2020)
+        var specVis7 = "js/bubble_concert.vg.json";
+        // dot strip plot (BTS Music Style)
+    
+      
+        // embed the viz 
+        vegaEmbed('#choropleth_map_popularity', specVis1, { "actions": false }).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
+
+</body>

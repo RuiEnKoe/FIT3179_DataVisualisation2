@@ -1,10 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Army Gender Distribution Based on Survey Respondents in 2022",
-    "width": 350,
-    "height": 400,
+    "title": "",
+    "width": 500,
+    "height": 500,
     
-    "data" :{"url": "/data/followers_by_gender_survey_2022.csv"},
+    
+    "data" :{"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/followers_by_gender_survey_2022.csv"},
 
     "encoding": {
 

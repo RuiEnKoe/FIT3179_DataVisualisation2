@@ -41,7 +41,6 @@
 
   <!-- inesert short intro about BTS -->
   <div class = para_container>
-    
     <!-- intro container -->
     <div class = intro_container>
       <!-- adjust paragraph -->
@@ -65,13 +64,13 @@
   <!-- pure grid group -->
   <div class="pure-g">
     <div id="title" class="pure-u-1">
-        <h1>Echoes Around the Globe</h1>
+        <h2>Echoes Around the Globe</h2>
     </div>
   </div>
 
   <div class="pure-g">
     <div id="maptitle" class="pure-u-1">
-      <h1>Popularity of BTS Based on Instagram Followers (August 2024)</h1>
+      <h3>Popularity of BTS Based on Instagram Followers (August 2024)</h3>
     </div>
   </div>
 
@@ -89,19 +88,19 @@
     This choropleth map visualises the popularity of BTS based on the number of Instagram followers in August 2024. It shows the number of Instagram followers in each country per 10,000 population, with darker shades indicating a higher number of followers.
   </p>
   
-
+  <!--Heading -->
   <div class="pure-g">
     <div id="title" class="pure-u-1">
-        <h1>The TrendSetters</h1>
+        <h2>The TrendSetters</h2>
     </div>
   </div>
 
   <!-- pure grid group -->
   <div class="pure-g">
     <div class="pure-u-1-2">
-      <div class="description content_right">
+      <div class="description content_left">
         <p class = "paragraph">
-          These charts show Google trends worldwide search and popularity data for past 1 year comparing BTS with different singers and artists around the globe which highlights the global influence of BTS.
+          These charts show Google trends worldwide search and popularity data for past 1 year (Jan 2023-Jan 2024) comparing BTS with different singers and artists around the globe which highlights the global influence of BTS.
           <br><br>
           This chart compares BTS with popular international artists like Ariana Grande, Justin Bieber, One Direction, Billie Ellish and Beyonce.
         </p>
@@ -109,7 +108,7 @@
       
     </div>
     <div class="pure-u-1-2">
-      <div id="multiple_line_chart1_trend" class="vis-container"></div>
+      <div id="multiple_line_chart1_trend"></div>
     </div>
   </div>
   <!-- end pure grid group -->
@@ -117,40 +116,69 @@
   <!-- pure grid group -->
   <div class="pure-g">
     <div class="pure-u-1-2">
-      <div id = "multiple_line_chart_trend" class="vis-container"></div>
+      <div id = "multiple_line_chart_trend" ></div>
     </div>
 
     <div class = "pure-u-1-2">
       <div class="description content_right">
         <p class = "paragraph">
-          These charts show Google trends worldwide search and popularity data for past 1 year comparing BTS with different singers and artists around the globe which highlights the global influence of BTS.
+          Genre of KPOP from which BTS originally belongs is ruled by them and other brands are still nowhere in cometition.
           <br><br>
-          This chart compares BTS with popular international artists like Ariana Grande, Justin Bieber, One Direction, Billie Ellish and Beyonce.
+          This chart compares BTS with some top-performing KPOP  bands like BLACKPINK, EXO, TWICE, and SEVENTEEN.
         </p>
     </div>
     </div>
-
   </div>
     <!-- end pure grid group -->
 
+    <!-- subheading -->
+    <div class="pure-g">
+      <div id="title" class="pure-u-1">
+          <h2>Demographics of ARMY</h2>
+      </div>
+    </div>
+
+    <div class = 'gender_pie_container'>
+      
+      <div class = 'visualisation_container'>
+        <h3>Army Gender Distribution Based on Survey Respondents in 2022</h3>
+        <div id = "donut_chart_gender"></div>
+      </div>
+
+      <div class = 'visualisation_container'>
+        <h3 style = 'padding-bottom: 40px'> ARMY Age Distribution</h3>
+        <div id = "bar_age"></div>
+      </div>
+
+    </div>
+
+    <!-- short para abt demogrphics -->
+    <p class = paragraph>
+      A survey has been conducted to understand the demographics of ARMY, the fanbase of BTS. The survey was conducted in 2022 and the data has been collected from the survey respondents. The survey data shows that the majority of AMRY is female and the age group of 18-24 years is the most active among the ARMY, which are the key demographics of the fanbase. 
+    </p>
+
+    <!-- subheading -->
+    <div class="pure-g">
+      <div id="title" class="pure-u-1">
+          <h2>ARMY- BTS Fanbase Evolution</h2>
+      </div>
+    </div>
+  
+    <div class = 'fanbase_evo_container'>
+      <div class = 'visualisation_container'>
+        <h3>Fan Base Evolution Across Various Platforms from 2020-2024</h3>
+      <div id = "stacked_bar_fanbase"></div>
+    
+    <!-- short para abt fan base -->
+    <p class = paragraph>
+      The chart shows the evolution of the BTS fanbase across various platforms from 2020 to 2024. The data has been collected from the survey respondents and the platforms include Instagram, Twitter, Facebook, Youtube, SoundCloud and Spotify. The chart shows the growth of the fanbase across these platforms over the years.
+    </p>
+      
 
 
 
+  
 
-
-
-
-
-
-
-
-  <!--include Vega-Lite code to show map on the webpage-->
-  <!-- <div id = "choropleth_map_popularity"></div> -->
-  <!-- <div id = "multiple_line_chart_trend"></div> -->
-  <!-- <div id = "multiple_line_chart1_trend"></div> -->
-  <div id = "donut_chart_gender"></div>
-  <div id = "bar_age"></div>
-  <div id = "stacked_bar_fanbase"></div>
   <div id = "bubble_chart_revenue"></div>
 
   </div>
@@ -191,17 +219,17 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    // vegaEmbed("#donut_chart_gender", specVis4, { "actions": false }).then(function(result) {
-    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    // }).catch(console.error);
+    vegaEmbed("#donut_chart_gender", specVis4, { "actions": false }).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
-    // vegaEmbed("#bar_age", specVis5, { "actions": false }).then(function(result) {
-    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    // }).catch(console.error);
+    vegaEmbed("#bar_age", specVis5, { "actions": false }).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
-    // vegaEmbed("#stacked_bar_fanbase", specVis6, { "actions": false }).then(function(result) {
-    //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    // }).catch(console.error);
+    vegaEmbed("#stacked_bar_fanbase", specVis6, { "actions": false }).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
 
     // vegaEmbed("#bubble_chart_revenue", specVis7, { "actions": false }).then(function(result) {
     //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view

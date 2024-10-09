@@ -23,7 +23,7 @@ body {
     margin-top: 30px;
     /* background-color: aqua; */
     padding: 10px;
-    height: 1800px;
+    height: 1750px;
     flex-direction: row;
     width: 1500px;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .pure-g {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
     /* background-color:aqua; */
     width: 1500px;
@@ -69,7 +69,7 @@ body {
 
 #maptitle{
 	text-align: center;
-    text-size-adjust: 15px;
+    text-size-adjust: 10px;
 }
 
 #body_text{
@@ -94,6 +94,7 @@ body {
     padding: 10px;
     height: 500;
     width: 1500px;
+    flex-direction: row;
 }
 
 .multiple_line_container{
@@ -116,12 +117,56 @@ body {
     align-items: flex-start;
 }
 
+.gender_pie_container {
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    margin-bottom: 30px;
+    background-color: aqua;
+    padding: 10px;
+    height: auto;
+    flex-direction: row;
+    width: 1500px;
+    gap: 20px;
+}
+
+.visualisation_container{
+    flex: 1; /* Takes up 50% of the available space */
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: white; */
+    text-align: center;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Reduced shadow */
+}
+
+.visualisation div {
+    width: 100%;
+    height: 300px; /* Reduced height */
+    max-width: 500px; /* Added max-width to keep the visual compact */
+}
+
+.fanbase_evo_container{
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    margin-bottom: 30px;
+    background-color: aqua;
+    padding: 10px;
+    height: auto;
+    flex-direction: row;
+    width: 1500px;
+}
+
 .content_left{
     padding-right: 50px;
+    padding-top: 10px;
+
 }
 
 .content_right{
-    padding-left: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 
@@ -136,12 +181,12 @@ body {
     /* height: 1000px; */
 }
 
-
-#bubble_plot{
+#bar_age{
     width: 80%;
     height: 80%;
-    top: 20px;
+    /* top: 10px; */
     left: 30px;
-    right: 100px;
+    right: 50px;
+    bottom: 40px;
 }
 

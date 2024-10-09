@@ -1,6 +1,5 @@
 {
    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Search Popularity of BTS Globally (Jan 2023-Aug 2024)",
     "width": 550,
     "height": 550,
 

@@ -1,11 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "ARMY Age Distribution",
-    "width": 300,
-    "height": 300,
+    "title": "",
+    "width": 500,
+    "height": 500,
     
     "data": {
-        "url": "data/followers_by_age_survey_2022.csv"
+        "url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/followers_by_age_survey_2022.csv"
     },
 
     "mark": {

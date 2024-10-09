@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Fan Base Evolution Across Various Platforms from 2020-2024",
-    "height": 300,
-    "width": 300,
+    "title": "",
+    "height": 500,
+    "width": 1000,
     
-    "data": {"url": "data/bts_army_fanbase_evo_long.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/bts_army_fanbase_evo_long.csv"},
 
     "mark": {
         "type": "bar",
@@ -12,7 +12,7 @@
     },
 
     "encoding":{
-        "x":{
+        "y":{
             "field": "Date",
             "type": "ordinal",
             "title": "Years",
@@ -23,7 +23,7 @@
             }
         },
 
-        "y":{
+        "x":{
             "aggregate": "sum",
             "field" : "number_of_fans",
             "type": "quantitative",

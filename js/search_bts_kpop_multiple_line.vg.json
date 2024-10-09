@@ -1,6 +1,5 @@
 {
-"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Search Popularity of BTS Among KPOP Groups (Jan 2023-Aug 2024)",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 550,
     "height": 550,
 
