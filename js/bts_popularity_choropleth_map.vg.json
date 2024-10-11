@@ -115,6 +115,55 @@
                     }
                 ]
             }
+        },
+
+        {
+            "transform": [
+                {
+                    "lookup": "properties.NAME",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/countryInfo.csv"
+                        },
+
+                        "key": "name",
+                        "fields": ["latitude", "longitude"]
+                    }
+                },
+
+                {
+                    "filter": "datum.properties.NAME == 'South Korea' || datum.properties.NAME == 'United States' || datum.properties.NAME == 'Canada' || datum.properties.NAME == 'United States of America' ||  datum.properties.NAME == 'Indonesia' || datum.properties.NAME == 'Brazil' || datum.properties.NAME == 'Mexico'|| datum.properties.NAME == 'Russia' || datum.properties.NAME == 'Chile' || datum.properties.NAME == 'Malaysia' "
+                }
+            ],
+
+
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -5,
+                "dy": -11,
+                "fontSize": 12
+            },
+
+            "encoding": {
+                "color":
+                {
+                    "value": "black"
+                },
+
+                "text": {
+                    "field": "properties.NAME",
+                    "type": "nominal"
+                },
+
+                "longitude": {
+                    "field": "longitude", "type": "quantitative"
+                },
+
+                "latitude": {
+                    "field": "latitude", "type": "quantitative"
+                }
+            }
         }
     ]
 }

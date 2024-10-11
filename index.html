@@ -16,8 +16,8 @@
   <!--Import Google Style words-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
 
   <!-- Import CSS -->
@@ -36,41 +36,83 @@
   <div class = dashboard_page>
 
   <!--insert image-->
-  <img src = 'css/Beyond_The_Scene.jpg' alt="background image"
-  style = 'width: 1510px; display: block'>
+  <img src = 'css/bts_banner.jpg' alt="background image"
+  style = 'width: 1200px; display: block'>
 
   <!-- inesert short intro about BTS -->
   <div class = para_container>
     <!-- intro container -->
     <div class = intro_container>
       <!-- adjust paragraph -->
-      <p class = "paragraph">
-        BTS, known as Bangtan Sonyeondan or "Beyond The Scene", is a Grammy-nominated South Korean boy band that has been capturing the hearts of millions of fans globally since its debut in Jun 2013. The group consists of seven members: <b>RM, Jin, Suga, J-hope, Jimin, V and Jung Kook</b>. 
+      <p>
+        BTS, or Bangtan Sonyeondan (Beyond The Scene), is a <strong>Grammy-nominated South Korean </strong>boy band that debuted in June 2013. They have gained <strong>global fame</strong> for their <strong>self-produced music</strong> and <strong>record-breaking achievements</strong>. Known as <strong>"21st Century Pop Icons"</strong>, they have earned <strong>four No. 1 songs</strong>, <strong>sold-out stadiums</strong>, and been named <strong>TIME's Entertainer of the Year 2020</strong>. Their dedicated fan base, <strong>ARMY (Adorable Representative M.C. for Youth)</strong>, is known for spreading love and positivity worldwide.
         <br><br>
-        Gaining recognition for their authentic and self-produced music, top-notch performances, and the way they interact with their fans, BTS has established themselves as <b>“21st century Pop Icons” </b> breaking countless world records. While imparting a positive influence through activities such as LOVE MYSELF campaign and UN 'Speak Yourself' speech, the band has mobilized millions of fans across the world, collected <b>four No. 1 songs</b> in a span of 9 months, performed multiple sold-out stadium shows across the world, and been named <b>TIME's Entertainer of the Year 2020</b>. BTS has been nominated for <b>Best Pop Duo/Group Performance</b> for the 63rd Grammy Awards and recognized with numerous prestigious awards like the Billboard Music Awards, American Music Awards and MTV Video Music Awards.
-        <br><br>
-        BTS has a dedicated fan base entitled <b>'ARMY'</b>, which stands for <b>Adorable Representative M.C. for Youth</b>. ARMY is known for its passionate support of BTS and its commitment to spreading love and positivity around the world. 
       </p>
     </div>
 
     <!-- image container -->
     <div class = img_container> 
-      <img src = 'css/bts.jpg' alt="BTS image" style = 'height: 1000px; width: 800px'>
+      <img src = 'css/bts_times.jpg' alt="BTS image">
     </div>
 
   <!-- end of paragraph container -->
   </div>
    
   <!-- pure grid group -->
+   <!-- 1st subheading: choloropleth map -->
   <div class="pure-g">
     <div id="title" class="pure-u-1">
         <h2>Echoes Around the Globe</h2>
     </div>
   </div>
 
+  <!-- choloropleth map title -->
   <div class="pure-g">
     <div id="maptitle" class="pure-u-1">
       <h3>Popularity of BTS Based on Instagram Followers (August 2024)</h3>
+    </div>
+  </div>
+  
+  <!-- short para link to choloropleth map -->
+  <p>
+      BTS ..... 
+  </p>
+
+  <!-- choloropleth map -->
+  <div class = 'chropleth_map_container'>
+
+    <!-- map container -->
+    <div class = 'visualisation_container'>
+      <!-- insert map -->
+      <div id = "choropleth_map_popularity"></div>
+      
+      <!-- annotation line -->
+      <svg class = svg_class>
+        <line 
+        x1="67.65%" y1="34%" 
+        x2="77.25%" y2="45.15%" 
+        style = "stroke: lightgray; stroke-width:1" 
+        />
+      </svg>
+
+      <!-- annotation line -->
+      <svg class = svg_class>
+        <line 
+        x1="20%" y1="33.5%" 
+        x2="5%" y2="44%" 
+        style = "stroke: lightgray; stroke-width:1" 
+        />
+      </svg>
+    
+       <!-- map annotation box -->
+      <div class = "map_annotation">
+        South Korea, the origin of the KPOP industry, is dominated by BTS, who have the <strong>highest number of Instagram followers</strong>. BTS has a <strong>strong presence</strong> in the country and is regarded as a <strong>national treasure</strong> .
+      </div>
+
+      <div class = "map_annotation2">
+        United States of America, is one of the country that BTS is <strong>one of the most popular KPOP band</strong> in the country. BTS has the <strong>positive number</strong> of Instagram followers in the region.
+      </div>
+
     </div>
   </div>
 
@@ -79,11 +121,11 @@
     <div id = "choropleth_map_popularity" class = "vis-container"></div>
   </div> -->
 
-    <div class="pure-u-1-1">
+    <!-- <div class="pure-u-1-1">
       <div id = "choropleth_map_popularity" class = "vis-container"></div>
-    </div>
+    </div> -->
 
-  <p class = paragraph>
+  <p>
     The data has been collected from the Soundchart, which analyses audience and song trends of BTS across worlwide. 
     This choropleth map visualises the popularity of BTS based on the number of Instagram followers in August 2024. It shows the number of Instagram followers in each country per 10,000 population, with darker shades indicating a higher number of followers.
   </p>
@@ -99,7 +141,7 @@
   <div class="pure-g">
     <div class="pure-u-1-2">
       <div class="description content_left">
-        <p class = "paragraph">
+        <p>
           These charts show Google trends worldwide search and popularity data for past 1 year (Jan 2023-Jan 2024) comparing BTS with different singers and artists around the globe which highlights the global influence of BTS.
           <br><br>
           This chart compares BTS with popular international artists like Ariana Grande, Justin Bieber, One Direction, Billie Ellish and Beyonce.
@@ -121,8 +163,8 @@
 
     <div class = "pure-u-1-2">
       <div class="description content_right">
-        <p class = "paragraph">
-          Genre of KPOP from which BTS originally belongs is ruled by them and other brands are still nowhere in cometition.
+        <p>
+          Genre of KPOP from which BTS originally belongs is ruled by them and other brands are still nowhere in competition.
           <br><br>
           This chart compares BTS with some top-performing KPOP  bands like BLACKPINK, EXO, TWICE, and SEVENTEEN.
         </p>
