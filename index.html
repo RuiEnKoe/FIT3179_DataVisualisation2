@@ -26,7 +26,6 @@
   <!--Import pure css-->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"crossorigin="anonymous">
 
-
 </head>
 
 <!--include body of dashboard-->
@@ -83,7 +82,7 @@
   <div class = 'chropleth_map_container'>
 
     <!-- map container -->
-    <div class = 'visualisation_container'>
+    <div class = 'vis_container2'>
       <!-- insert map -->
       <div id = "choropleth_map_popularity"></div>
       
@@ -152,7 +151,7 @@
 
     <!-- annotation container  -->
     <!-- insert short annotate  -->
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-2" >
       <div class="description content_left">
         <p>
           This chart shows Google trends worldwide search and popularity data for past 1 year (Jan 2023-Jan 2024), comparing <span style = "color:#6a3d9a; font-weight: 900;">BTS</span> with different singers and artists around the globe, highlighting the <strong>global influence of </strong><span style = "color:#6a3d9a; font-weight: 900;">BTS</span>.
@@ -164,7 +163,7 @@
 
     <!-- multiple lines container -->
     <!-- insert multiple line -->
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-2" style = "box-sizing: border-box; background-color: white;border-radius: 8px">
       <div id="multiple_line_chart1_trend"></div>
     </div>
 
@@ -176,7 +175,7 @@
   <div class="pure-g">
 
     <!-- multiple lines container -->
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-2" style = "box-sizing: border-box; background-color: white;border-radius: 8px">
       <div id = "multiple_line_chart_trend" ></div>
     </div>
 
@@ -202,6 +201,28 @@
       </div>
     </div>
 
+  <!-- transition -->
+  <div class = "short_para_container">
+    <div class = "intro_text">
+      <p>
+        After discovering BTS's massive popularity, you are probably wondering who makes up their dedicated fanbase, ARMY. 
+      </p>
+    </div>
+
+    <div class = "intro_text">
+      <p>
+        Well, ARMY spans across the globe, making it hard to sum them up in just a few words. However, we can give you some insights into their demographics. 
+      </p>
+    </div>
+
+    <div class = "intro_text">
+      <p>
+        Thus, a survey was conducted in 2022 to gather data on the fanbase and better understand who ARMY is.
+      </p>
+    </div>
+
+  </div>
+
     <!-- (pie and bar chart) demographics container -->
     <div class = 'gender_pie_container'>
       
@@ -215,16 +236,67 @@
         <!-- annotation line -->
         <svg class = svg_class>
           <line 
-          x1="60.75%" y1="50%" 
-          x2="77.25%" y2="45.15%" 
-          style = "stroke: black; stroke-width:1" 
+          x1="58.75%" y1="45%" 
+          x2="77.25%" y2="49.15%" 
+          style = "stroke: rgb(190, 190, 190); stroke-width:2" 
+          />
+        </svg>
+
+        <svg class = svg_class>
+          <line 
+          x1="45.95%" y1="30%" 
+          x2="42.5%" y2="14.5%" 
+          style = "stroke: rgb(190, 190, 190); stroke-width:2" 
+          />
+        </svg>
+
+        <!-- non-binary -->
+        <svg class = svg_class>
+          <line 
+          x1="48.5%" y1="30%" 
+          x2="47.75%" y2="15.5%" 
+          style = "stroke: rgb(190, 190, 190); stroke-width:2" 
+          />
+        </svg>
+
+        <!-- other -->
+        <svg class = svg_class>
+          <line 
+          x1="49.5%" y1="29.5%" 
+          x2="50.5%" y2="20%" 
+          style = "stroke: rgb(190, 190, 190); stroke-width:2" 
           />
         </svg>
 
         <!-- pie annotation container -->
         <div class = "pie_annotation">
-          South Korea, the origin of the KPOP industry, is dominated by BTS, who have the <strong>highest number of Instagram followers</strong>. BTS has a <strong>strong presence</strong> in the country and is regarded as a <strong>national treasure</strong> .
+          <span style = "color: #ed53b0; font-weight: 500;">
+            Female
+            96.23% (~541082.044 fans)
+          </span>
         </div>
+
+        <div class = "pie_annotation2">
+          <span style = "color: #6495ED; font-weight: 500;">
+            Male
+            1.35% (~7590.78 fans)
+          </span>
+        </div>
+
+        <div class = "pie_annotation3">
+          <span style = "color: #7a0177; font-weight: 500;">
+            Non-binary
+            1.35% (~7590.78 fans)
+          </span>
+        </div>
+
+        <div class = "pie_annotation4">
+          <span style = "color: #A13333; font-weight: 500;">
+            Other
+            0.64% (~7590.78 fans)
+          </span>
+        </div>
+
       </div>
 
       <!-- bar chart container -->
@@ -238,9 +310,31 @@
     </div>
 
     <!-- short para abt demogrphics -->
-    <p>
+     <!-- transition -->
+  <div class = "short_para_container">
+    <div class = "intro_text">
+      <p>
+        
+      </p>
+    </div>
+
+    <div class = "intro_text">
+      <p>
+        Well, ARMY spans across the globe, making it hard to sum them up in just a few words. However, we can give you some insights into their demographics. 
+      </p>
+    </div>
+
+    <div class = "intro_text">
+      <p>
+        Thus, a survey was conducted in 2022 to gather data on the fanbase and better understand who ARMY is.
+      </p>
+    </div>
+
+  </div>
+
+    <!-- <p>
       A survey has been conducted to understand the demographics of ARMY, the fanbase of BTS. The survey was conducted in 2022 and the data has been collected from the survey respondents. The survey data shows that the majority of AMRY is female and the age group of 18-24 years is the most active among the ARMY, which are the key demographics of the fanbase. 
-    </p>
+    </p> -->
 
     <!-- subheading -->
     <div class="pure-g">

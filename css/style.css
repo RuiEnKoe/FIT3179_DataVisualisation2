@@ -24,7 +24,7 @@ body *{
     justify-content: space-between;
     align-items: stretch;
     margin-top: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 5px;
     height: 450px;
     flex-direction: row;
@@ -143,7 +143,7 @@ strong{
     display: flex;
     justify-content: space-between;
     /* align-items: stretch; */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     /* background-color: aqua; */
     padding: 10px;
     height: auto;
@@ -169,7 +169,7 @@ strong{
     flex: 1; /* Takes up 50% of the available space */
     box-sizing: border-box;
     padding: 10px;
-    /* background-color: white; */
+    background-color: white;
     text-align: center;
     border-radius: 8px;
     position: relative;
@@ -181,6 +181,17 @@ strong{
     width: 100%;
     height: 300px; /* Reduced height */
     max-width: 500px; /* Added max-width to keep the visual compact */
+}
+
+.vis_container2{
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: white; */
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Reduced shadow */
 }
 
 /* footer */
@@ -226,18 +237,70 @@ footer{
 
 .pie_annotation{
     position: absolute;
-    background-color: white;
-    width: 200px;
+    background-color: rgb(255, 255, 255);
+    /* White background with 50% opacity */
+    width: 130px;
     padding: 10px;
     text-align: left;
     top: 20%;
     /* bottom: 33%; */
     /* left: 50%; */
-    transform: translate(0px, 0px);
+    transform: translate(410px, 190px);
     /* translate(x, y)*/
-    border: 1px solid rgb(181, 179, 179);
+    border: 1px solid rgb(255, 255, 255);
     /* Reduced shadow */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+
+.pie_annotation2{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    /* White background with 50% opacity */
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    top: 20%;
+    /* bottom: 33%; */
+    /* left: 50%; */
+    transform: translate(110px, -85px);
+    /* translate(x, y)*/
+    border: 1px solid rgb(255, 255, 255);
+    /* Reduced shadow */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+
+.pie_annotation3{
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    /* White background with 50% opacity */
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    top: 20%;
+    /* bottom: 33%; */
+    /* left: 50%; */
+    transform: translate(250px, -80px);
+    /* translate(x, y)*/
+    border: 1px solid rgb(255, 255, 255);
+    /* Reduced shadow */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+
+.pie_annotation4{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    /* White background with 50% opacity */
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    top: 20%;
+    /* bottom: 33%; */
+    /* left: 50%; */
+    transform: translate(275px, -35px);
+    /* translate(x, y)*/
+    border: 1px solid rgb(255, 255, 255);
+    /* Reduced shadow */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
 }
 
 .svg_class{
@@ -256,9 +319,9 @@ footer{
     justify-content: center;
     /* align-items: stretch; */
     margin-bottom: 20px;
-    /* background-color: aqua; */
+    background-color: aqua;
     padding: 10px;
-    height: 350px;
+    height: auto;
     flex-direction: row;
     width: 1180px;
     gap: 15px;
@@ -269,7 +332,7 @@ footer{
     box-sizing: border-box;
     padding: 40px;
     padding-top: 10px;
-    /* background-color: yellow; */
+    background-color: yellow;
     /* align-items: flex-start; */
     /* max-width: 750px; */
     text-align: left;
