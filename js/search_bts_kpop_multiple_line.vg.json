@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 550,
-    "height": 550,
+    "width": 540,
+    "height": 580,
 
     "data" :{"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/bts_kpop_search_trend_long.csv"},
 
@@ -69,8 +69,9 @@
                     "field": "artist",
                     "type": "nominal",
                     "scale": {
-                        "range": ["#fc68dc", "#6a3d9a", "#837651", "#92a8d1", "#fdb3a5"]
-                    }
+                        "range": ["#fb00b8e2", "#6a3d9a", "#837651", "#7299e3", "#fdb3a5"]
+                    },
+                    "legend": null           
                 }
             },
 
@@ -133,6 +134,10 @@
     "config": {
         "axisX": {
             "minExtent": 20
+        },
+
+        "title": {
+            "dx": -20
         }
     }
 }

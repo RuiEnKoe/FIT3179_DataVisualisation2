@@ -32,18 +32,18 @@
 <!--include body of dashboard-->
 <body>
 
-  <!-- page size-->
+  <!-- dashboard size-->
   <div class = dashboard_page>
 
   <!--insert image-->
   <img src = 'css/bts_banner.jpg' alt="background image"
   style = 'width: 1200px; display: block'>
 
-  <!-- inesert short intro about BTS -->
+  <!-- insert short intro about BTS -->
   <div class = para_container>
     <!-- intro container -->
     <div class = intro_container>
-      <!-- adjust paragraph -->
+      <!-- intro paragraph -->
       <p>
         BTS, or Bangtan Sonyeondan (Beyond The Scene), is a <strong>Grammy-nominated South Korean </strong>boy band that debuted in June 2013. They have gained <strong>global fame</strong> for their <strong>self-produced music</strong> and <strong>record-breaking achievements</strong>. Known as <strong>"21st Century Pop Icons"</strong>, they have earned <strong>four No. 1 songs</strong>, <strong>sold-out stadiums</strong>, and been named <strong>TIME's Entertainer of the Year 2020</strong>. Their dedicated fan base, <strong>ARMY (Adorable Representative M.C. for Youth)</strong>, is known for spreading love and positivity worldwide.
         <br><br>
@@ -52,6 +52,7 @@
 
     <!-- image container -->
     <div class = img_container> 
+      <!-- insert bts image -->
       <img src = 'css/bts_times.jpg' alt="BTS image">
     </div>
 
@@ -59,12 +60,17 @@
   </div>
    
   <!-- pure grid group -->
-   <!-- 1st subheading: choloropleth map -->
+  <!-- 1st subheading: choloropleth map -->
   <div class="pure-g">
     <div id="title" class="pure-u-1">
         <h2>Echoes Around the Globe</h2>
     </div>
   </div>
+
+  <!-- short para link to choloropleth map -->
+  <p>
+    BTS ..... 
+  </p>
 
   <!-- choloropleth map title -->
   <div class="pure-g">
@@ -73,11 +79,6 @@
     </div>
   </div>
   
-  <!-- short para link to choloropleth map -->
-  <p>
-      BTS ..... 
-  </p>
-
   <!-- choloropleth map -->
   <div class = 'chropleth_map_container'>
 
@@ -104,7 +105,7 @@
         />
       </svg>
     
-       <!-- map annotation box -->
+      <!-- map annotation container -->
       <div class = "map_annotation">
         South Korea, the origin of the KPOP industry, is dominated by BTS, who have the <strong>highest number of Instagram followers</strong>. BTS has a <strong>strong presence</strong> in the country and is regarded as a <strong>national treasure</strong> .
       </div>
@@ -116,86 +117,128 @@
     </div>
   </div>
 
-<!-- 
-  <div class = 'chropleth_map_container'>
-    <div id = "choropleth_map_popularity" class = "vis-container"></div>
-  </div> -->
-
-    <!-- <div class="pure-u-1-1">
-      <div id = "choropleth_map_popularity" class = "vis-container"></div>
-    </div> -->
-
   <p>
     The data has been collected from the Soundchart, which analyses audience and song trends of BTS across worlwide. 
     This choropleth map visualises the popularity of BTS based on the number of Instagram followers in August 2024. It shows the number of Instagram followers in each country per 10,000 population, with darker shades indicating a higher number of followers.
   </p>
   
-  <!--Heading -->
-  <div class="pure-g">
+  <!-- pure grid group -->
+  <!-- 2nd subheading: multiple line charts -->  
+    <div class="pure-g">
     <div id="title" class="pure-u-1">
         <h2>The TrendSetters</h2>
     </div>
   </div>
 
+  <!-- transition -->
+  <div class = "short_para_container">
+    <div class = "intro_text">
+      <p>
+        BTS has emerged as the <strong>ultimate trendsetters</strong> in <strong>KPOP</strong> and even <strong>globally</strong>. They have achieved a level of <strong>global influence and success</strong>  that no other bands have come close to matching. As the <strong>first KPOP group</strong> to break into the <strong>U.S. music market</strong>, they laid the <strong>foundation</strong> for KPOP's global reach.
+      </p>
+    </div>
+
+    <div class = "intro_text">
+      <p>
+        The group's impact on KPOP is <strong>unparalleled</strong>, as they have <strong>redefined</strong> the genre's boundaries and <strong>paved the way</strong> for future generation of artists, while <strong>expanding</strong> the global reach of KPOP. Their <strong>unmatched success </strong>continues to <strong>inspire</strong> other KPOP bands, <strong>shaping</strong> the future of the industry.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- multiple lines chart worldwide-->
   <!-- pure grid group -->
   <div class="pure-g">
+
+    <!-- annotation container  -->
+    <!-- insert short annotate  -->
     <div class="pure-u-1-2">
       <div class="description content_left">
         <p>
-          These charts show Google trends worldwide search and popularity data for past 1 year (Jan 2023-Jan 2024) comparing BTS with different singers and artists around the globe which highlights the global influence of BTS.
+          This chart shows Google trends worldwide search and popularity data for past 1 year (Jan 2023-Jan 2024), comparing <span style = "color:#6a3d9a; font-weight: 900;">BTS</span> with different singers and artists around the globe, highlighting the <strong>global influence of </strong><span style = "color:#6a3d9a; font-weight: 900;">BTS</span>.
           <br><br>
-          This chart compares BTS with popular international artists like Ariana Grande, Justin Bieber, One Direction, Billie Ellish and Beyonce.
+          It compares <span style = "color:#6a3d9a; font-weight: 900;">BTS</span> with popular international artists like <span style = "color:#fa2e00; font-weight: 900;">Ariana Grande</span>, <span style = "color:#1f78b4; font-weight: 900;">Justin Bieber</span>, <span style = "color:#493628; font-weight: 900;">One Direction</span>, and <span style = "color:#286d61; font-weight: 900;">Billie Ellish</span>.
         </p>
       </div>
-      
     </div>
+
+    <!-- multiple lines container -->
+    <!-- insert multiple line -->
     <div class="pure-u-1-2">
       <div id="multiple_line_chart1_trend"></div>
     </div>
+
   </div>
   <!-- end pure grid group -->
 
+  <!-- multiple lines chart KPOP-->
   <!-- pure grid group -->
   <div class="pure-g">
+
+    <!-- multiple lines container -->
     <div class="pure-u-1-2">
       <div id = "multiple_line_chart_trend" ></div>
     </div>
 
+    <!-- annotation container -->
     <div class = "pure-u-1-2">
       <div class="description content_right">
         <p>
-          Genre of KPOP from which BTS originally belongs is ruled by them and other brands are still nowhere in competition.
+          <span style = "color:#6a3d9a; font-weight: 900;">BTS</span>, originally from the KPOP genre, has <strong>dominated the industry</strong>, with no other bands coming close to their level of <strong>global influence and success.</strong> The group's impact on KPOP is <strong>unmatched</strong>, setting <strong>new standards </strong>in <strong>music and performance</strong>. 
           <br><br>
-          This chart compares BTS with some top-performing KPOP  bands like BLACKPINK, EXO, TWICE, and SEVENTEEN.
+          This chart compares <span style = "color:#6a3d9a; font-weight: 900;">BTS</span> with other top-performing KPOP bands like  <span style = "color:#fb00b8e2; font-weight: 900;">BLACKPINK</span>, <span style = "color:#837651; font-weight: 900;">EXO</span>, <span style = "color:#fdb3a5; font-weight: 900;">TWICE</span>, and <span style = "color:#7299e3; font-weight: 900;">SEVENTEEN</span>, highlighting the competitive landscape within the genre. While these groups have achieved significant success, <span style = "color:#6a3d9a; font-weight: 900;">BTS</span> <strong>remains the benchmark</strong> by which all other KPOP acts are measured.
         </p>
+      </div>
     </div>
-    </div>
+
   </div>
     <!-- end pure grid group -->
 
-    <!-- subheading -->
+    <!-- pure grid group -->
+    <!-- 3rd subheading: ARMY Demographics -->
     <div class="pure-g">
       <div id="title" class="pure-u-1">
           <h2>Demographics of ARMY</h2>
       </div>
     </div>
 
+    <!-- (pie and bar chart) demographics container -->
     <div class = 'gender_pie_container'>
       
+      <!-- pie chart container -->
       <div class = 'visualisation_container'>
         <h3>Army Gender Distribution Based on Survey Respondents in 2022</h3>
-        <div id = "donut_chart_gender"></div>
+
+        <!-- insert pie chart -->
+        <div id = "pie_chart_gender"></div>
+
+        <!-- annotation line -->
+        <svg class = svg_class>
+          <line 
+          x1="60.75%" y1="50%" 
+          x2="77.25%" y2="45.15%" 
+          style = "stroke: black; stroke-width:1" 
+          />
+        </svg>
+
+        <!-- pie annotation container -->
+        <div class = "pie_annotation">
+          South Korea, the origin of the KPOP industry, is dominated by BTS, who have the <strong>highest number of Instagram followers</strong>. BTS has a <strong>strong presence</strong> in the country and is regarded as a <strong>national treasure</strong> .
+        </div>
       </div>
 
+      <!-- bar chart container -->
       <div class = 'visualisation_container'>
-        <h3 style = 'padding-bottom: 40px'> ARMY Age Distribution</h3>
+        <h3 style = 'padding-bottom: 50px'> ARMY Age Distribution</h3>
+
+        <!-- insert bar chart -->
         <div id = "bar_age"></div>
       </div>
 
     </div>
 
     <!-- short para abt demogrphics -->
-    <p class = paragraph>
+    <p>
       A survey has been conducted to understand the demographics of ARMY, the fanbase of BTS. The survey was conducted in 2022 and the data has been collected from the survey respondents. The survey data shows that the majority of AMRY is female and the age group of 18-24 years is the most active among the ARMY, which are the key demographics of the fanbase. 
     </p>
 
@@ -218,6 +261,7 @@
       The chart shows the evolution of the BTS fanbase across various platforms from 2020 to 2024. The data has been collected from the survey respondents and the platforms include Instagram, Twitter, Facebook, Youtube, SoundCloud and Spotify. The chart shows the growth of the fanbase across these platforms over the years.
     </p>
 
+    <!-- footer -->
     <footer>
       <p>Sources:<br>
           <a href="" style="color: #1abc9c;">SoundChart</a> | 
@@ -226,12 +270,6 @@
       <p>Author: Koe Rui En<br>Last Modified: Tuesday, 8 October 2024</p>
   </footer>
 
-
-      
-
-
-
-  
 
   <!-- <div id = "bubble_chart_revenue"></div> -->
 
@@ -251,6 +289,7 @@
     // gender
     var specVis4 = "js/gender_pie_chart_survey.vg.json";
     // var specVis4 = "js/gender_pie_chart_platform_label.vg.json";
+    // var specVis4 = "js/gender_donut_chart_survey.vg.json";
     // age
     var specVis5 = "js/age_bar_survey.vg.json";
     // stacked bar chart (fan base evolution over years across various platforms)
@@ -273,7 +312,7 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed("#donut_chart_gender", specVis4, { "actions": false }).then(function(result) {
+    vegaEmbed("#pie_chart_gender", specVis4, { "actions": false }).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 

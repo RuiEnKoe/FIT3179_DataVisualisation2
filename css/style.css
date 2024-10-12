@@ -7,13 +7,8 @@
     padding-right: 50px;
 }
 
-/* .vis_container {
-    width: 100%;
-    background-color: blue;
-} */
-
 body {
-    background-color: #b58eff;
+    background-color: #bc9afa;
 }
 
 body *{
@@ -55,13 +50,13 @@ body *{
     align-items: center;
     /* background-color: white; */
     max-height: max-content;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 15px;
-    /* padding-bottom: 10px; */
+    padding-bottom: 20px;
     max-width: 450px;
 }
 
-/* font */
+/* font/content */
 p {
     font-family: "Open Sans", sans-serif;
     /* font (em) = 25px/16 */
@@ -104,6 +99,21 @@ strong{
     text-size-adjust: 15px;
 }
 
+.content_left{
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.content_right{
+    padding-left: 30px;
+    padding-top: 10px;
+    text-align: left;
+    padding-right: 5px;
+
+}
+
 /* Layout */
 
 /* heading container */
@@ -122,43 +132,23 @@ strong{
     /* align-items: stretch;
     margin-top: 20px; */
     top: 0px;
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
     padding: 10px;
     /* height: 500; */
     width: 1180px;
     /* flex-direction: row; */
 }
 
-.multiple_line_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: 30px;
-    background-color: aqua;
-    padding: 10px;
-    height: auto;
-    flex-direction: row;
-    width: 1500px;
-}
-
-.line_graph_container {
-    flex: 1 1 50%; /* Takes up 50% of the available space */
-    box-sizing: border-box;
-    padding: 50px;
-    background-color: yellow;
-    align-items: flex-start;
-}
-
 .gender_pie_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* align-items: stretch; */
     margin-bottom: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 10px;
     height: auto;
     flex-direction: row;
-    width: 1200px;
+    width: 1180px;
     gap: 20px;
 }
 
@@ -171,7 +161,7 @@ strong{
     padding: 10px;
     height: auto;
     flex-direction: row;
-    width: 1200px;
+    width: 1180px;
 }
 
 /* inner vis container (insert vis) */
@@ -193,17 +183,7 @@ strong{
     max-width: 500px; /* Added max-width to keep the visual compact */
 }
 
-.content_left{
-    padding-right: 50px;
-    padding-top: 10px;
-
-}
-
-.content_right{
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
+/* footer */
 footer{
     text-align: center;
     padding: 10px;
@@ -212,6 +192,7 @@ footer{
     /* width: 1500px; */
 }
 
+/* annotation */
 .map_annotation{
     position: absolute;
     background-color: white;
@@ -243,6 +224,22 @@ footer{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
+.pie_annotation{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    text-align: left;
+    top: 20%;
+    /* bottom: 33%; */
+    /* left: 50%; */
+    transform: translate(0px, 0px);
+    /* translate(x, y)*/
+    border: 1px solid rgb(181, 179, 179);
+    /* Reduced shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
 .svg_class{
     width: 100%;
     height: 100% ;
@@ -253,6 +250,31 @@ footer{
     pointer-events: none
 }
 
+/* transition text container */
+.short_para_container {
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+    padding: 10px;
+    height: 350px;
+    flex-direction: row;
+    width: 1180px;
+    gap: 15px;
+}
+
+.intro_text{
+    flex: 1 1 50%; /* Takes up 50% of the available space */
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 10px;
+    /* background-color: yellow; */
+    /* align-items: flex-start; */
+    /* max-width: 750px; */
+    text-align: left;
+    margin: 0 auto;
+}
 
 /* visualisation */
 #choropleth_map_popularity{
@@ -271,8 +293,45 @@ footer{
     width: 80%;
     height: 80%;
     /* top: 10px; */
-    left: 30px;
-    right: 50px;
+    /* left: 20px; */
+    /* right: 5px; */
     bottom: 40px;
+    padding-right: 30px;
 }
+
+#multiple_line_chart1_trend{
+    top: 10px;
+    left: 5px;
+    right: 10px; 
+    /* background-color: blue; */
+    bottom: 200px;
+    padding-right: 50px;
+    /* text-align: center; */
+    margin-bottom: 35px;
+    /* height: 1000px; */
+}
+
+/* unused */
+/* .multiple_line_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 30px;
+    background-color: aqua;
+    padding: 10px;
+    height: auto;
+    flex-direction: row;
+    width: 1500px;
+}
+
+.line_graph_container {
+    /* Takes up 50% of the available space */
+    /* flex: 1 1 50%; 
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: yellow;
+    align-items: flex-start; 
+    
+}
+*/
 

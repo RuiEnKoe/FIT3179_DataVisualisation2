@@ -1,9 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "",
-    "width": 500,
+    "width": 400,
     "height": 500,
-    
     
     "data" :{"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/followers_by_gender_survey_2022.csv"},
 
@@ -56,52 +55,9 @@
                 "outerRadius": 130,
                 "tooltip": true
             }
-        },
-
-        {
-            "mark": 
-            {
-                "type": "text",
-                "fontWeight": "bold",
-                "radius": 150,
-                "align": "right",
-                "baseline": "top",
-                "dx": -3,
-                "dy": 3
-            },
-
-            "encoding":
-            {
-                "text":
-                {
-                    "field": "gender",
-                    "type": "nominal"
-                    
-                }
-            }
-        },
-
-        {  
-            "mark": 
-            {
-                "type": "text",
-                "fontWeight": "bold",
-                "radius": 160,
-                "align": "right",
-                "baseline": "top",
-                "dx": -10,
-                "dy": 4
-            },
-
-            "encoding":
-            {
-                "text":
-                {
-                    "field": "percentage_gender",
-                    "type": "quantitative"
-                }
-            }    
         }
+
+       
     ]
         
 }

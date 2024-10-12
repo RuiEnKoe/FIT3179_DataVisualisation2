@@ -1,7 +1,7 @@
 {
    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 550,
-    "height": 550,
+   "width": 540,
+   "height": 580,
 
     "data" :{"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/bts_worldwide_search_trend_long.csv"},
 
@@ -69,8 +69,10 @@
                     "field": "artist",
                     "type": "nominal",
                     "scale": {
-                        "range": ["#e7298a", "#6a3d9a", "#ff7f00", "#1f78b4", "#00FFFF"]
-                    }
+                        "range": ["#fa2e00", "#6a3d9a", "#286d61", "#1f78b4", "#493628"]
+                    },
+                    "legend": null
+                    
                 }
             },
 
@@ -133,6 +135,10 @@
     "config": {
         "axisX": {
             "minExtent": 20
+        },
+
+        "title": {
+            "dx": -20
         }
     }
 }

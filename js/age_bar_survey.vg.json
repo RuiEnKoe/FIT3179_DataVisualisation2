@@ -1,8 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "",
-    "width": 500,
-    "height": 500,
+    "width": 420,
+    "height": 580,
+    "background": "#c8abfd",
     
     "data": {
         "url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/followers_by_age_survey_2022.csv"
@@ -19,7 +20,10 @@
         "y": { 
             "field": "num_followers_age", 
             "type": "quantitative",
-            "title": "Number of followers"
+            "title": "Number of followers",
+            "axis":{
+                "grid": false
+            }
         },
         
         "x": {
@@ -27,7 +31,8 @@
             "type": "ordinal",
             "title": "Age Group",
             "axis":{
-                "labelAngle": 0
+                "labelAngle": 0,
+                "grid": false
             }
         },
 
