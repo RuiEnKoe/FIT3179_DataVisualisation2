@@ -108,7 +108,7 @@ strong{
 .pure-g {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:aqua;
+    /* background-color:aqua; */
     width: 1180px;
     padding: 10px;
 }
@@ -342,7 +342,7 @@ strong{
     justify-content: center;
     /* align-items: stretch; */
     margin-bottom: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 10px;
     height: auto;
     flex-direction: row;
@@ -355,7 +355,7 @@ strong{
     box-sizing: border-box;
     padding: 40px;
     padding-top: 10px;
-    background-color: yellow;
+    /* background-color: yellow; */
     /* align-items: flex-start; */
     /* max-width: 750px; */
     text-align: left;
@@ -370,7 +370,7 @@ strong{
     justify-content: space-between;
     /* align-items: flex-start; */
     margin-top: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 5px;
     /* height: 450px; */
     flex-direction: row;
@@ -439,14 +439,17 @@ strong{
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .popup-overlay.active {
     opacity: 1;
     visibility: visible;
 }
+
 .popup-overlay.active .popup-card {
     transform: scale(1);
     opacity: 1;
 }
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -458,41 +461,55 @@ strong{
 .member-popup-img {
     width: 200px;
     height: 200px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
 .member-img {
     width: 150px;
-    height: 150px;
+    height: 190px;
     object-fit: cover;
     border-radius: 10%;
     cursor: pointer;
     /* transition: transform 0.3s ease; */
+    
+}
+
+#member-info {
+    white-space: pre-line; /* This will respect line breaks */
+    text-align: left; /* Align text to the left for better readability */
+    padding-left: 5px;
+    margin-top: 10px;
 }
 
 
 /* footer */
-footer{
-    text-align: left;
+.source_container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    margin-bottom: 20px;
+    /* background-color: white; */
     padding: 10px;
-    background-color: white;
-    margin-top: 20px;
+    height: 150px;
+    flex-direction: row;
+    width: 1180px;
     gap: 20px;
-    /* width: 1500px; */
 }
 
-.source_container{
+/* source */
+.source{
     flex: 1 1 50%; /* Takes up 50% of the available space */
     box-sizing: border-box;
-    padding: 40px;
+    padding: 20px;
     padding-top: 10px;
-    background-color: yellow;
+    /* background-color: yellow; */
     /* align-items: flex-start; */
     /* max-width: 750px; */
     text-align: left;
     margin: 0 auto;
+    max-width: max-content;
 }
 
 /* visualisation */
@@ -563,6 +580,15 @@ footer{
 #linetitle{
     text-align: center;
     text-size-adjust: 15px;
+}
+
+footer{
+text-align: left;
+padding: 10px;
+background-color: white;
+margin-top: 20px;
+gap: 20px;
+width: 1500px;
 }
 */
 

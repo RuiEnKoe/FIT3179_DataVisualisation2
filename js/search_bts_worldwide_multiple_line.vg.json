@@ -69,7 +69,7 @@
                     "field": "artist",
                     "type": "nominal",
                     "scale": {
-                        "range": ["#fa2e00", "#6a3d9a", "#286d61", "#1f78b4", "#493628"]
+                        "range": ["#d37100", "#6a3d9a", "#286d61", "#1f78b4", "#493628"]
                     },
                     "legend": null
                     
