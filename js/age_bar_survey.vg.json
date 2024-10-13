@@ -3,94 +3,101 @@
     "title": "",
     "width": 420,
     "height": 500,
-    
-    "data": {
-        "url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/followers_by_age_survey_2022.csv"
-    },
 
-    "mark": {
-        "type": "bar",
-        "tooltip": true,
-        "cursor": "pointer",
-        "stroke": "black"
-    },
+    "data": {"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/followers_by_age_survey_2022.csv"},
 
-    "encoding": {
-        "y": { 
-            "field": "num_followers_age", 
-            "type": "quantitative",
-            "title": "Number of followers",
-            "axis":{
-                "grid": false
-            }
-        },
-        
-        "x": {
-            "field": "age_group", 
-            "type": "ordinal",
-            "title": "Age Group",
-            "axis":{
-                "labelAngle": 0,
-                "grid": false
-            }
-        },
+    "layer": [
+        {
 
-        "fillOpacity":{
-            "condition": {
-                "param": "select",
-                "value": 1
+            "mark": {
+                "type": "bar",
+                "tooltip": true,
+                "cursor": "pointer",
+                "stroke": "black"
             },
-            "value": 0.3
-        },
 
-        "strokeWidth":{
-            "condition": [
-                {
-                    "param": "select",
-                    "empty": false,
-                    "value": 2
+            "encoding": {
+                "y": { 
+                    "field": "num_followers_age", 
+                    "type": "quantitative",
+                    "title": "Number of followers",
+                    "axis":{
+                        "grid": false
+                    }
+                },
+                
+                "x": {
+                    "field": "age_group", 
+                    "type": "ordinal",
+                    "title": "Age Group",
+                    "axis":{
+                        "labelAngle": 0,
+                        "grid": false
+                    }
                 },
 
-                {
-                    "param": "highlight",
-                    "empty": false,
-                    "value": 1
-                }
-            ],
-            
-            "value": 0
-        },
+                "fillOpacity":{
+                    "condition": {
+                        "param": "select",
+                        "value": 1
+                    },
+                    "value": 0.3
+                },
 
-        "color":{
-            "field": "age_group",
-            "type": "nominal",
-            "title": "Age Group",
-            "scale": {
-                "range": ["#756bb1", "#bdbdbd","#bdbdbd","#bdbdbd","#bdbdbd", "#dbdbd"]
-            },
-            "legend": null
-        },
+                "strokeWidth":{
+                    "condition": [
+                        {
+                            "param": "select",
+                            "empty": false,
+                            "value": 2
+                        },
 
-        "tooltip": [
-            {
-                "field": "num_followers_age",
-                "type": "quantitative",
-                "title": "Number of followers"
-            },
+                        {
+                            "param": "highlight",
+                            "empty": false,
+                            "value": 1
+                        }
+                    ],
+                    
+                    "value": 0
+                },
 
-            {
-                "field": "percentage_age",
-                "type": "quantitative",
-                "title": "Percentage of followers(%)"
-            },
+                "color":{
+                    "field": "age_group",
+                    "type": "nominal",
+                    "title": "Age Group",
+                    "scale": {
+                        "range": ["#bdbdbd", "#756bb1","#bdbdbd","#bdbdbd","#bdbdbd", "#dbdbd"]
+                    },
+                    "legend": null
+                },
 
-            {
-                "field": "age_group",
-                "type": "ordinal",
-                "title": "Age Group"
+                "tooltip": [
+                    {
+                        "field": "num_followers_age",
+                        "type": "quantitative",
+                        "title": "Number of followers",
+                        "format": ","
+                    },
+
+                    {
+                        "field": "percentage_age",
+                        "type": "quantitative",
+                        "title": "Percentage of followers(%)",
+                        "format": ","
+                    },
+
+                    {
+                        "field": "age_group",
+                        "type": "ordinal",
+                        "title": "Age Group",
+                        "format": ","
+                    }
+                ]
             }
-        ]
-    },
+        }
+
+    ],
 
    "config": {
         "scale": {

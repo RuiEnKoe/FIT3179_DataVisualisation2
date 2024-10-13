@@ -87,18 +87,6 @@ strong{
     font-size: 1.3075em;
 }
 
-#body_text{
-    font-size: 15px;
-    font-weight: normal;
-    margin: 0;
-    line-height: 1.6;
-}
-
-#linetitle{
-    text-align: center;
-    text-size-adjust: 15px;
-}
-
 .content_left{
     padding-right: 30px;
     padding-top: 10px;
@@ -157,7 +145,19 @@ strong{
     justify-content: center;
     /* align-items: stretch; */
     margin-bottom: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    padding: 10px;
+    height: auto;
+    flex-direction: row;
+    width: 1180px;
+}
+
+.revenue_container{
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    margin-bottom: 30px;
+    /* background-color: aqua; */
     padding: 10px;
     height: auto;
     flex-direction: row;
@@ -196,7 +196,7 @@ strong{
 
 /* footer */
 footer{
-    text-align: center;
+    text-align: left;
     padding: 10px;
     background-color: white;
     margin-top: 20px;
@@ -296,11 +296,43 @@ footer{
     top: 20%;
     /* bottom: 33%; */
     /* left: 50%; */
-    transform: translate(275px, -35px);
+    transform: translate(275px, -30px);
     /* translate(x, y)*/
     border: 1px solid rgb(255, 255, 255);
     /* Reduced shadow */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+
+.bar_annotation{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    text-align: left;
+    top: 20%;
+    /* bottom: 33%; */
+    /* left: 50%; */
+    transform: translate(275px, -30px);
+    /* translate(x, y)*/
+    border: 1px solid rgb(181, 179, 179);
+    /* Reduced shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.stacked_bar_annotation{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    top: 20%;
+    /* bottom: 33%; */
+    /* left: 50%; */
+    transform: translate(950px, 70px);
+    /* translate(x, y)*/
+    border: 1px solid rgb(181, 179, 179);
+    /* Reduced shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .svg_class{
@@ -395,6 +427,18 @@ footer{
     background-color: yellow;
     align-items: flex-start; 
     
+}
+
+#body_text{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.6;
+}
+
+#linetitle{
+    text-align: center;
+    text-size-adjust: 15px;
 }
 */
 

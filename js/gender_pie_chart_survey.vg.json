@@ -35,13 +35,15 @@
             {
                 "field": "num_followers_gender",
                 "type": "quantitative",
-                "title": "Number of fans"
+                "title": "Number of fans",
+                "format": ","
             },
 
             {
                 "field": "percentage_gender",
                 "type": "quantitative",
-                "title": "Percentage of fans(%)"
+                "title": "Percentage of fans(%)",
+                "format": ","
             }
         ]
 
