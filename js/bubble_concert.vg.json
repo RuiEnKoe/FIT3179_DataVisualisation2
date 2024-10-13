@@ -4,7 +4,7 @@
     "width": 850,
     "height": 500,
 
-    "data":{"url": "/data/bts_tour_con_revenue.csv"},
+    "data":{"url": "https://raw.githubusercontent.com/RuiEnKoe/FIT3179_DataVisualisation2/refs/heads/main/data/bts_tour_con_revenue.csv"},
 
     "params": [
         {
@@ -41,13 +41,13 @@
                 [
                     null,
                     "Love Yourself: Speak Yourself",
-                    "Permission To Dance on Stage"
+                    "Permission To Dance On Stage"
                 ],
                 "labels":
                 [
                     "Show All",
                     "Love Yourself: Speak Yourself",
-                    "Permission To Dance on Stage"
+                    "Permission To Dance On Stage"
                 ],
                 "name": "Tour Name "
                 
@@ -233,9 +233,10 @@
             
             "mark": {
                 "type": "text",
-                "align": "right",
+                "align": "left",
                 "baseline": "middle",
-                "dx": -10,
+                "dx": 9.5,
+                "dy": 8.5,
                 "fontSize": 11.5,
                 "fontStyle": "italic"
             },
@@ -253,7 +254,7 @@
 
                 "opacity": {
                     "condition":{
-                        "test": "datum['city'] == 'Shizuoka'|| datum['city'] == 'Pasadena' || datum['city'] == 'Singapore' || datum['city'] == 'Hong Kong '",
+                        "test": "datum['city'] == 'Osaka'|| datum['city'] == 'Pasadena' || datum['city'] == 'Singapore' || datum['city'] == 'Bangkok' || datum['city'] == 'Seoul' || datum['city'] == 'Sao Paulo' || datum['city'] == 'London'",
                         "value": 1
                     },
                     "value": 0
